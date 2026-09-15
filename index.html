@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wojood | تصميم صفحات هبوط للصالونات النسائية</title>
+<meta name="description" content="Wojood — نصمم صفحات هبوط احترافية لصالونات التجميل النسائية في مسقط. باقات تبدأ من 35 ر.ع.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&family=Almarai:wght@300;400;700;800&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --plum:#7B5EA7;--plum-deep:#5C3D8F;--plum-light:#E8DFF2;--plum-mist:#F3EEF8;
+  --gold:#C9A87C;--gold-dark:#A8875A;--cream:#FAF7F2;--dark:#2D1B3D;
+  --text:#3D2B4F;--text-light:#7A6B8A;--white:#fff;
+  --radius-md:20px;--radius-lg:32px;--radius-full:999px;
+  --shadow-md:0 8px 32px rgba(45,27,61,.08);--shadow-lg:0 16px 48px rgba(45,27,61,.12);
+}
+html{scroll-behavior:smooth}
+body{font-family:'Tajawal',sans-serif;background:var(--cream);color:var(--text);line-height:1.7}
+.container{max-width:1200px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:'Almarai',sans-serif;line-height:1.3}
+h1{font-size:clamp(2rem,5vw,3.2rem);font-weight:800}
+h2{font-size:clamp(1.4rem,3vw,2rem);font-weight:700}
+
+/* HERO */
+.hero{padding:100px 0 70px;text-align:center;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;top:-20%;left:-10%;width:500px;height:500px;background:radial-gradient(circle,rgba(123,94,167,.08),transparent 70%);border-radius:50%}
+.logo-badge{display:inline-flex;align-items:center;gap:8px;padding:8px 20px;background:var(--plum-mist);border:1px solid var(--plum-light);border-radius:var(--radius-full);font-size:.85rem;font-weight:600;color:var(--plum);margin-bottom:24px}
+.hero h1{color:var(--dark);margin-bottom:16px}
+.hero h1 em{font-style:normal;background:linear-gradient(135deg,var(--plum),#8B3A62);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.hero p{color:var(--text-light);font-size:1.1rem;max-width:560px;margin:0 auto 32px}
+.hero-cta{display:inline-flex;gap:12px;flex-wrap:wrap;justify-content:center}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 30px;border-radius:var(--radius-full);font-family:'Almarai',sans-serif;font-weight:700;text-decoration:none;transition:all .3s}
+.btn-primary{background:linear-gradient(135deg,var(--plum),var(--plum-deep));color:#fff;box-shadow:0 4px 20px rgba(123,94,167,.3)}
+.btn-primary:hover{transform:translateY(-2px)}
+.btn-wa{background:#25D366;color:#fff}
+.btn-wa:hover{background:#20BD5A;transform:translateY(-2px)}
+
+/* PRICING STRIP */
+.pricing-strip{padding:50px 0;background:var(--white)}
+.pricing-strip .container{text-align:center}
+.pricing-strip h2{color:var(--dark);margin-bottom:8px}
+.pricing-strip p{color:var(--text-light);margin-bottom:36px}
+.tiers{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:820px;margin:0 auto}
+.tier-card{background:var(--cream);border-radius:var(--radius-md);padding:24px 20px;text-align:center;border:2px solid transparent;transition:all .3s}
+.tier-card.mid{background:var(--white);border-color:var(--plum);box-shadow:var(--shadow-md)}
+.tier-name{font-family:'Almarai',sans-serif;font-weight:700;color:var(--dark);margin-bottom:4px}
+.tier-price{font-family:'Almarai',sans-serif;font-size:1.8rem;font-weight:800;color:var(--plum);margin-bottom:8px}
+.tier-price span{font-size:.9rem;color:var(--text-light);font-weight:500}
+.tier-desc{font-size:.82rem;color:var(--text-light)}
+
+/* BRANDS SECTION */
+.brands{padding:80px 0}
+.brands .container{text-align:center}
+.section-label{display:inline-flex;align-items:center;gap:8px;font-size:.8rem;font-weight:700;letter-spacing:.08em;color:var(--plum);text-transform:uppercase;margin-bottom:10px}
+.section-label::before{content:'';width:24px;height:2px;background:var(--gold);border-radius:2px}
+.brands h2{color:var(--dark);margin-bottom:12px}
+.brands > .container > p{color:var(--text-light);max-width:520px;margin:0 auto 48px}
+
+.brand-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:28px;text-align:start}
+.brand-card{background:var(--white);border-radius:var(--radius-lg);padding:32px;box-shadow:var(--shadow-md);transition:all .3s;border:1px solid rgba(123,94,167,.06)}
+.brand-card:hover{box-shadow:var(--shadow-lg);transform:translateY(-4px)}
+.brand-swatch{width:100%;height:6px;border-radius:4px;margin-bottom:20px}
+.brand-header{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:8px}
+.brand-name{font-family:'Almarai',sans-serif;font-size:1.3rem;font-weight:800;color:var(--dark)}
+.brand-type{font-size:.8rem;background:var(--plum-mist);color:var(--plum);padding:4px 12px;border-radius:var(--radius-full);font-weight:600;white-space:nowrap}
+.brand-loc{font-size:.85rem;color:var(--text-light);margin-bottom:16px}
+.brand-links{display:flex;flex-direction:column;gap:8px;margin-top:16px}
+.brand-links-row{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.link-pill{display:block;text-align:center;padding:10px 8px;border-radius:12px;background:var(--cream);color:var(--text);text-decoration:none;font-size:.82rem;font-weight:600;transition:all .25s;border:1px solid transparent}
+.link-pill:hover{background:var(--plum-mist);border-color:var(--plum-light);color:var(--plum)}
+.link-pill.full{background:var(--plum-mist);color:var(--plum);font-weight:700}
+.link-pill.full:hover{background:var(--plum-light)}
+
+/* FOOTER */
+.footer{background:var(--dark);color:rgba(255,255,255,.6);padding:50px 0 24px;text-align:center;margin-top:40px}
+.footer-logo{font-family:'Almarai',sans-serif;font-size:1.4rem;font-weight:800;color:#fff;margin-bottom:8px}
+.footer-logo span{color:var(--plum-light)}
+.footer p{font-size:.85rem;margin-bottom:20px}
+.footer-cta{display:inline-flex;gap:12px}
+
+@media(max-width:768px){
+  .tiers{grid-template-columns:1fr}
+  .tier-card.mid{order:-1}
+  .brand-grid{grid-template-columns:1fr}
+  .brand-links-row{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<section class="hero">
+  <div class="container">
+    <div class="logo-badge">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+      Wojood · تصميم صفحات هبوط
+    </div>
+    <h1>صفحة هبوط <em>احترافية</em><br>لصالونك خلال أيام</h1>
+    <p>نصمم صفحات هبوط أنيقة تحوّل زوارك لعميلات فعليات — بأسعار عُمانية وباللهجة اللي تفهمينها.</p>
+    <div class="hero-cta">
+      <a href="https://wa.me/96890000000?text=مرحباً، أريد الاستفسار عن تصميم صفحة هبوط لصالوني" class="btn btn-wa" target="_blank" rel="noopener">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        تواصلي معنا
+      </a>
+      <a href="#brands" class="btn btn-primary">شوفي النماذج</a>
+    </div>
+  </div>
+</section>
+
+<section class="pricing-strip">
+  <div class="container">
+    <h2>ثلاث باقات تناسب كل ميزانية</h2>
+    <p>كل باقة بنموذج حي تقدرين تتصفحينه قبل القرار</p>
+    <div class="tiers">
+      <div class="tier-card">
+        <div class="tier-name">يالله نبدأ</div>
+        <div class="tier-price">٣٥<span> ر.ع</span></div>
+        <div class="tier-desc">صفحة أنيقة بسيطة + واتساب مباشر</div>
+      </div>
+      <div class="tier-card mid">
+        <div class="tier-name">كملي الصورة</div>
+        <div class="tier-price">٦٠<span> ر.ع</span></div>
+        <div class="tier-desc">+ معرض أعمال وآراء عميلات</div>
+      </div>
+      <div class="tier-card">
+        <div class="tier-name">أنا معك</div>
+        <div class="tier-price">٩٠<span> ر.ع <small>+١٠/شهرياً</small></span></div>
+        <div class="tier-desc">+ باقات، أسئلة شائعة، وتحديث شهري</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="brands" id="brands">
+  <div class="container">
+    <div class="section-label">نماذج أعمالنا</div>
+    <h2>خمس هويات، خمس تجارب مختلفة</h2>
+    <p>كل تصميم يحمل شخصية البزنس الخاصة به — الألوان، النبرة، والتفاصيل كلها مصممة لتناسب جمهوره.</p>
+
+    <div class="brand-grid">
+
+      <div class="brand-card">
+        <div class="brand-swatch" style="background:linear-gradient(90deg,#8f2d56,#c8a15a)"></div>
+        <div class="brand-header"><span class="brand-name">Lumière</span><span class="brand-type">تجهيز عرائس</span></div>
+        <div class="brand-loc">الموج، مسقط</div>
+        <div class="brand-links">
+          <a href="lumiere-full.html" class="link-pill full">🔗 النسخة الكاملة</a>
+          <div class="brand-links-row">
+            <a href="lumiere-basic.html" class="link-pill">يالله نبدأ</a>
+            <a href="lumiere-standard.html" class="link-pill">كملي الصورة</a>
+            <a href="lumiere-premium.html" class="link-pill">أنا معك</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="brand-card">
+        <div class="brand-swatch" style="background:linear-gradient(90deg,#c25a44,#d4956a)"></div>
+        <div class="brand-header"><span class="brand-name">Rosé Muse</span><span class="brand-type">بار جمال سريع</span></div>
+        <div class="brand-loc">الغبرة، مسقط</div>
+        <div class="brand-links">
+          <a href="rose-muse-full.html" class="link-pill full">🔗 النسخة الكاملة</a>
+          <div class="brand-links-row">
+            <a href="rose-muse-basic.html" class="link-pill">يالله نبدأ</a>
+            <a href="rose-muse-standard.html" class="link-pill">كملي الصورة</a>
+            <a href="rose-muse-premium.html" class="link-pill">أنا معك</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="brand-card">
+        <div class="brand-swatch" style="background:linear-gradient(90deg,#b8824a,#cfa15a)"></div>
+        <div class="brand-header"><span class="brand-name">Aura Gold</span><span class="brand-type">استوديو صبغات</span></div>
+        <div class="brand-loc">المعبيلة، مسقط</div>
+        <div class="brand-links">
+          <a href="aura-gold-full.html" class="link-pill full">🔗 النسخة الكاملة</a>
+          <div class="brand-links-row">
+            <a href="aura-gold-basic.html" class="link-pill">يالله نبدأ</a>
+            <a href="aura-gold-standard.html" class="link-pill">كملي الصورة</a>
+            <a href="aura-gold-premium.html" class="link-pill">أنا معك</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="brand-card">
+        <div class="brand-swatch" style="background:linear-gradient(90deg,#5f2236,#c39a4a)"></div>
+        <div class="brand-header"><span class="brand-name">سِدرة</span><span class="brand-type">صالون فاخر</span></div>
+        <div class="brand-loc">القرم، مسقط</div>
+        <div class="brand-links">
+          <a href="sidra-full.html" class="link-pill full">🔗 النسخة الكاملة</a>
+          <div class="brand-links-row">
+            <a href="sidra-basic.html" class="link-pill">يالله نبدأ</a>
+            <a href="sidra-standard.html" class="link-pill">كملي الصورة</a>
+            <a href="sidra-premium.html" class="link-pill">أنا معك</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="brand-card">
+        <div class="brand-swatch" style="background:linear-gradient(90deg,#1B4A3D,#B99A55)"></div>
+        <div class="brand-header"><span class="brand-name">دار الياسمين</span><span class="brand-type">مركز تجميل شامل</span></div>
+        <div class="brand-loc">الخوير، مسقط</div>
+        <div class="brand-links">
+          <a href="dar-alyasmin-full.html" class="link-pill full">🔗 النسخة الكاملة</a>
+          <div class="brand-links-row">
+            <a href="dar-alyasmin-basic.html" class="link-pill">يالله نبدأ</a>
+            <a href="dar-alyasmin-standard.html" class="link-pill">كملي الصورة</a>
+            <a href="dar-alyasmin-premium.html" class="link-pill">أنا معك</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="brand-card">
+        <div class="brand-swatch" style="background:linear-gradient(90deg,#7B5EA7,#C9A87C)"></div>
+        <div class="brand-header"><span class="brand-name">ليلاف</span><span class="brand-type">صالون نسائي</span></div>
+        <div class="brand-loc">مسقط</div>
+        <div class="brand-links">
+          <a href="laylaf-full.html" class="link-pill full">🔗 النسخة الكاملة</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-logo">Wo<span>jood</span></div>
+    <p>تصميم صفحات هبوط لصالونات التجميل النسائية في مسقط، عُمان</p>
+    <div class="footer-cta">
+      <a href="https://wa.me/96890000000?text=مرحباً، أريد الاستفسار عن تصميم صفحة هبوط لصالوني" class="btn btn-wa" target="_blank" rel="noopener">راسلينا واتساب</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
